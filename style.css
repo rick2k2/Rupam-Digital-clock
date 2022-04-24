@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #000;
+  }
+  .wrapper2{
+    height: 380px;
+    width: 380px;
+    position: relative;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff3e03);
+    border-radius: 10px;
+    cursor: default;
+    animation: animate 1.5s linear infinite;
+  }
+.wrapper2 .display2,
+.wrapper2 span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper2 .display2{
+  z-index: 999;
+  height: 350px;
+  width: 350px;
+  background-image: url('Rupam saha.png');
+  border-radius: 100%;
+  text-align: center;
+}
+.display2 #time2{
+  line-height: 200px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+h2{
+    font-family: Blackadder ITC;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.wrapper2 span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper2 span:first-child{
+  filter: blur(7px);
+}
+.wrapper2 span:last-child{
+  filter: blur(20px);
+}
+
+.display2 #time{
+    line-height: 85px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+  }
